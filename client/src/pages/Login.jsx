@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5002/api/auth/login",
+        "https://stylehub-backend-x2ke.onrender.com/api/auth/login",
         {
           email,
           password,

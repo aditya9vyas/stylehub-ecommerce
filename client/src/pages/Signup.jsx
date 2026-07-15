@@ -9,7 +9,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      await axios.post("http://localhost:5002/api/auth/register", {
+      await axios.post("https://stylehub-backend-x2ke.onrender.com/api/auth/register", {
         name,
         email,
         password,
