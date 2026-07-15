@@ -52,6 +52,60 @@ const products = [
     image: "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800",
     rating: 4.9,
   },
+  {
+  id: 7,
+  name: "Oversized T-Shirt",
+  price: 1299,
+  category: "Men",
+  image:
+    "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800",
+  rating: 4.8,
+},
+{
+  id: 8,
+  name: "Men Hoodie",
+  price: 2299,
+  category: "Men",
+  image:
+    "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800",
+  rating: 4.7,
+},
+{
+  id: 9,
+  name: "Casual Shirt",
+  price: 1799,
+  category: "Men",
+  image:
+    "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=800",
+  rating: 4.6,
+},
+{
+  id: 10,
+  name: "Denim Jeans",
+  price: 2499,
+  category: "Men",
+  image:
+    "https://images.unsplash.com/photo-1542272604-787c3835535d?w=800",
+  rating: 4.9,
+},
+{
+  id: 11,
+  name: "Premium Watch",
+  price: 4999,
+  category: "Accessories",
+  image:
+    "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800",
+  rating: 4.9,
+},
+{
+  id: 12,
+  name: "Running Shoes",
+  price: 3299,
+  category: "Men",
+  image:
+    "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+  rating: 4.8,
+},
 ];
 
 function Products() {
@@ -134,11 +188,11 @@ function Products() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-50 via-white to-rose-50">
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-slate-100">
       <Navbar />
 
       <div className="max-w-7xl mx-auto px-6 py-10">
-        <div className="bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-3xl p-8 mb-10 text-center shadow-xl">
+        <div className="bg-gradient-to-r from-gray-50 to-purple-600 text-white rounded-3xl p-8 mb-10 text-center shadow-xl">
           <h2 className="text-4xl font-bold mb-2">🔥 Fashion Flash Sale</h2>
           <p className="text-lg">Up to 70% OFF on Beauty, Fashion & Accessories</p>
           <div className="mt-4 text-2xl font-bold">
@@ -151,7 +205,7 @@ function Products() {
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-5 py-2 rounded-full ${selectedCategory === cat ? "bg-pink-500 text-white" : "bg-white shadow"}`}
+              className={`px-5 py-2 rounded-full ${selectedCategory === cat ? "bg-gray-50 text-white" : "bg-white shadow"}`}
             >
               {cat}
             </button>
@@ -191,7 +245,7 @@ function Products() {
 
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="text-sm text-pink-500 font-medium">
+                  <span className="text-sm text-gray-50 font-medium">
                     {product.category}
                   </span>
                   <FaHeart
@@ -227,7 +281,7 @@ function Products() {
                       e.stopPropagation();
                       addToCart(product);
                     }}
-                    className="flex-1 bg-pink-500 hover:bg-pink-600 text-white py-2 rounded-xl flex items-center justify-center gap-2"
+                    className="flex-1 bg-gray-50 hover:bg-gray-800 text-white py-2 rounded-xl flex items-center justify-center gap-2"
                   >
                     <FaShoppingCart /> Add To Cart
                   </button>
@@ -256,7 +310,7 @@ function Products() {
             placeholder="Enter your email"
             className="border p-3 rounded-xl w-full max-w-md"
           />
-          <button className="ml-3 bg-pink-500 text-white px-6 py-3 rounded-xl mt-3 md:mt-0">
+          <button className="ml-3 bg-gray-50 text-white px-6 py-3 rounded-xl mt-3 md:mt-0">
             Subscribe
           </button>
         </div>

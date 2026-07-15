@@ -9,7 +9,7 @@ function Signup() {
 
   const handleSignup = async () => {
     try {
-      await axios.post("http://localhost:5001/api/auth/register", {
+      await axios.post("http://localhost:5002/api/auth/register", {
         name,
         email,
         password,
@@ -33,12 +33,12 @@ function Signup() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-rose-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-slate-100">
       <Navbar />
 
       <div className="flex justify-center items-center py-16">
         <div className="bg-white shadow-2xl rounded-3xl p-8 w-full max-w-md">
-          <h1 className="text-4xl font-bold text-center text-pink-600 mb-6">
+          <h1 className="text-4xl font-bold text-center text-black mb-6">
             Create Account
           </h1>
 
@@ -68,7 +68,7 @@ function Signup() {
 
           <button
             onClick={handleSignup}
-            className="w-full bg-pink-500 text-white py-3 rounded-xl hover:bg-pink-600"
+            className="w-full bg-black text-white py-3 rounded-xl hover:bg-black"
           >
             Sign Up
           </button>

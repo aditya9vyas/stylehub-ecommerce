@@ -12,7 +12,7 @@ function Login() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5001/api/auth/login",
+        "http://localhost:5002/api/auth/login",
         {
           email,
           password,
@@ -36,12 +36,12 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-100 via-white to-rose-100">
+    <div className="min-h-screen bg-gradient-to-br from-gray-100 via-white to-rose-100">
       <Navbar />
 
       <div className="flex items-center justify-center py-16 px-4">
         <div className="bg-white shadow-2xl rounded-3xl p-8 w-full max-w-md">
-          <h1 className="text-4xl font-bold text-center text-pink-600 mb-2">
+          <h1 className="text-4xl font-bold text-center text-black mb-2">
             Welcome Back
           </h1>
 
@@ -79,7 +79,7 @@ function Login() {
 
           <button
             onClick={handleLogin}
-            className="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-xl font-semibold"
+            className="w-full bg-black hover:bg-gray-900 text-white py-3 rounded-xl font-semibold"
           >
             Login
           </button>
@@ -93,7 +93,7 @@ function Login() {
             Don't have an account?{" "}
             <Link
               to="/signup"
-              className="text-pink-600 font-semibold hover:underline"
+              className="text-black font-semibold hover:underline"
             >
               Sign Up
             </Link>

@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import ProductDetails from "./pages/ProductDetails";
 import Dashboard from "./pages/Dashboard";
 import Checkout from "./pages/Checkout";
+import OrderSuccess from "./pages/OrderSuccess";
 
 function ProtectedRoute({ children }) {
   const token = localStorage.getItem("token");
@@ -46,6 +47,7 @@ function App() {
           path="/checkout"
           element={<ProtectedRoute><Checkout /></ProtectedRoute>}
         />
+        <Route path="/order-success" element={<OrderSuccess />} />
         </Routes>
       </div>
     </BrowserRouter>
